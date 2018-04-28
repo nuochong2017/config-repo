@@ -1,9 +1,9 @@
-server:
-  port: 8700
-spring:
-  application:
-    name: gateway
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+zuul:
+  sensitive-headers: 
+  routes:
+    configService:
+      path: /config/**
+      serviceId: NUOCHONG-CONFIG-SERVER
+    userService:
+      path: /user/**
+      serviceId: USER-SERVICE
