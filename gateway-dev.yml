@@ -7,3 +7,6 @@ zuul:
     userService:
       path: /user/**
       serviceId: USER-SERVICE
+    taskService:
+      path: /task/**
+      serviceId: TASK-SERVICE
