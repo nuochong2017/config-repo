@@ -1,12 +1,1 @@
-zuul:
-  sensitive-headers: 
-  routes:
-    configService:
-      path: /config/**
-      serviceId: NUOCHONG-CONFIG-SERVER
-    userService:
-      path: /user/**
-      serviceId: USER-SERVICE
-    taskService:
-      path: /task/**
-      serviceId: TASK-SERVICE
+
